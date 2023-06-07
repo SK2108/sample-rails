@@ -2,19 +2,8 @@
 
 ---
 options:
-  bin-cd: false
-  cache: false
-  ci: false
-  compose: false
-  fullstaq: false
-  jemalloc: false
-  mysql: false
-  parallel: false
-  platform:
+  compose: true
+  fullstaq: true
+  jemalloc: true
   postgresql: true
-  prepare: true
-  redis: false
-  swap:
-  yjit: false
-  label: {}
-  nginx: false
+  precompile: build
