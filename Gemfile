@@ -52,3 +52,5 @@ end
 # on a native Windows system:
 # gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "dockerfile-rails", ">= 1.0.0", :group => :development
+
+gem "byebug", "~> 11.1", :groups => [:development, :test]
