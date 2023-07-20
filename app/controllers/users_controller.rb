@@ -23,6 +23,7 @@ class UsersController < ApplicationController
 
   private
 
+  # This is an example of strong parameters.
   def user_params
     params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation)
