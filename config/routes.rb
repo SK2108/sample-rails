@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'users/new'
   root to: 'static_pages#home'
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
 
   # get "users/new"
   get '/signup', to: 'users#new'
+  resources :users
 
   # get "/login", to: "session#new"
 
