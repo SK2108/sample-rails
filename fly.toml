@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for falling-meadow-466 on 2023-06-07T15:35:16+02:00
+# fly.toml app configuration file generated for falling-meadow-466 on 2023-08-15T17:36:01+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -7,13 +7,14 @@ app = "falling-meadow-466"
 primary_region = "cdg"
 console_command = "/rails/bin/rails console"
 
+[build]
+
 [env]
   DATABASE_URL = "sqlite3:///mnt/newapp_data/production.sqlite3"
 
-[mounts]
+[[mounts]]
   source = "sqlite3_newapp_data"
   destination = "/mnt/newapp_data"
-
 
 [http_service]
   internal_port = 3000
