@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-gem "rails",                      "7.0.7.2"
+gem "rails",                      "7.0.8"
 gem "image_processing",           "1.12.2"
 gem "active_storage_validations", "1.0.4"
 gem "bcrypt",                     "3.1.19"
@@ -28,7 +28,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "web-console", "4.2.0"
+  gem "web-console", "4.2.1"
 end
 
 group :test do
@@ -36,9 +36,9 @@ group :test do
   gem "selenium-webdriver",       "4.12.0"
   gem "webdrivers",               "5.2.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "minitest",                 "5.19.0"
+  gem "minitest",                 "5.20.0"
   gem "minitest-reporters",       "1.6.1"
-  gem "guard",                    "2.18.0"
+  gem "guard",                    "2.18.1"
   gem "guard-minitest",           "2.4.6"
 end
 
