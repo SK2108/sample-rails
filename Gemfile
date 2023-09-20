@@ -22,14 +22,14 @@ gem "bootsnap",                   "1.16.0", require: false
 gem 'rubocop', require: false
 
 # gem "sqlite3",  '~> 1.6'
-# gem "pg",         "1.5.4"
+gem "pg",         "1.5.4"
 
 group :development, :test do
   gem "debug",   "1.8.0", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
-  gem "sqlite3",  '~> 1.6'
+  gem "pg",         "1.5.4"
   gem "web-console", "4.2.0"
 end
 
