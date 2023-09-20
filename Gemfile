@@ -29,6 +29,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "sqlite3",  '~> 1.6'
   gem "web-console", "4.2.0"
 end
 
