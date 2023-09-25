@@ -17,7 +17,7 @@ gem "importmap-rails",            "1.2.1"
 gem "turbo-rails",                "1.4.0"
 gem "stimulus-rails",             "1.2.2"
 gem "jbuilder",                   "2.11.5"
-gem "puma",                       "6.3.1"
+gem "puma",                       "6.4.0"
 gem "bootsnap",                   "1.16.0", require: false
 gem 'rubocop', require: false
 
@@ -44,7 +44,7 @@ end
 
 group :production do
   gem "pg",         "1.5.4"
-  gem "aws-sdk-s3", "1.134.0", require: false
+  gem "aws-sdk-s3", "1.135.0", require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem.
