@@ -33,7 +33,7 @@ end
 
 group :test do
   gem "capybara",                 "3.39.2"
-  gem "selenium-webdriver",       "4.12.0"
+  gem "selenium-webdriver",       "4.13.1"
   gem "webdrivers",               "5.2.0"
   gem "rails-controller-testing", "1.0.5"
   gem "minitest",                 "5.20.0"
@@ -44,7 +44,7 @@ end
 
 group :production do
   gem "pg",         "1.5.4"
-  gem "aws-sdk-s3", "1.135.0", require: false
+  gem "aws-sdk-s3", "1.136.0", require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem.
