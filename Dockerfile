@@ -55,7 +55,7 @@ ARG RAILS_MASTER_KEY
 ENV RAILS_MASTER_KEY=$RAILS_MASTER_KEY
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN ./bin/rails assets:precompile
+RUN SECRET_KEY_BASE=DUMMY ./bin/rails assets:precompile
 
 
 # Final stage for app image
