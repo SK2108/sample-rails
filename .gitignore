@@ -39,3 +39,5 @@
 
 # Ignore Byebug history
 .byebug_history
+/config/credentials/production.key
+
