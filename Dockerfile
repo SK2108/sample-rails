@@ -51,7 +51,9 @@ COPY --link . .
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
-# ARG RAILS_MASTER_KEY
+ARG RAILS_MASTER_KEY
+RUN --mount=type=secret,id=master_key,dst=/path/to/rails_app/config/master.key \
+  RAILS_ENV=production bin/rails assets:precompile
 # ENV RAILS_MASTER_KEY=$RAILS_MASTER_KEY
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
