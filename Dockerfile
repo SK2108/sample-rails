@@ -54,7 +54,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 # ENV RAILS_MASTER_KEY=$RAILS_MASTER_KEY
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN SECRET_KEY_BASE`bin/rake secret` rails assets:precompile
+RUN SECRET_KEY_BASE_DUMMY=1 bundle exec rails assets:precompile
 
 
 # Final stage for app image
