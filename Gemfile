@@ -13,7 +13,7 @@ gem "bootstrap-will_paginate",    "1.0.0"
 gem "bootstrap-sass",             "3.4.1"
 gem "sassc-rails",                "2.1.2"
 gem "sprockets-rails",            "3.4.2"
-gem "importmap-rails",            "1.2.1"
+gem "importmap-rails",            "~>1.2.1"
 gem "turbo-rails",                "1.4.0"
 gem "stimulus-rails",             "1.2.2"
 gem "jbuilder",                   "2.11.5"
@@ -25,7 +25,6 @@ gem 'rubocop', require: false
 
 group :development, :test do
   gem "debug",   "1.8.0", platforms: %i[ mri mingw x64_mingw ]
-  gem "pg",         "1.5.4"
 end
 
 group :development do
