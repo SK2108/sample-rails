@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-gem "rails",                      "7.0.8"
+gem "rails",                      "7.1.0"
 gem "image_processing",           "1.12.2"
 gem "active_storage_validations", "1.0.4"
 gem "bcrypt",                     "3.1.19"
@@ -34,7 +34,7 @@ end
 
 group :test do
   gem "capybara",                 "3.39.2"
-  gem "selenium-webdriver",       "4.12.0"
+  gem "selenium-webdriver",       "4.14.0"
   gem "webdrivers",               "5.2.0"
   gem "rails-controller-testing", "1.0.5"
   gem "minitest",                 "5.20.0"
@@ -45,7 +45,7 @@ end
 
 group :production do
   gem "pg",         "1.5.4"
-  gem "aws-sdk-s3", "1.135.0", require: false
+  gem "aws-sdk-s3", "1.136.0", require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem.
