@@ -25,6 +25,7 @@ gem 'rubocop', require: false
 
 group :development, :test do
   gem "debug",   "1.8.0", platforms: %i[ mri mingw x64_mingw ]
+  gem "pg",         "1.5.4"
 end
 
 group :development do
