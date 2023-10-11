@@ -20,6 +20,7 @@ gem "jbuilder",                   "2.11.5"
 gem "puma",                       "6.4.0"
 gem "bootsnap",                   "1.16.0", require: false
 gem 'rubocop', require: false
+gem 'psych', '5.0.0'
 
 # gem "sqlite3",  '~> 1.6'
 
