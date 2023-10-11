@@ -25,7 +25,7 @@ brew services stop postgresql@14
 bin/rails server
 ```
 
-If you need help with the command, use the one below:
+If you need help with the command, use the one below
 
 ```markdown
 bin/rails server --help
