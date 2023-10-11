@@ -10,7 +10,7 @@ default: &default
   timeout: 5000
   username: postgres
   password: PGPASSWORD
-  host: PGHOST
+  host: containers-us-west-74.railway.app
   port: 5782
 
 development:
