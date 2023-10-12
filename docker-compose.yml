@@ -23,7 +23,7 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5782:5782"
     healthcheck:
       test: pg_isready
       interval: 2s
