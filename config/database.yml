@@ -10,7 +10,7 @@ default: &default
   timeout: 5000
   username: postgres
   password: <%= ENV['PGPASSWORD'] %> 
-  host: <%= ENV['PGHOST'] %> 
+  host: <%= ENV['PGHOST'] || 'localhost' %> 
   port: 5782
 
 development:
