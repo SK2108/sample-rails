@@ -9,8 +9,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   username: postgres
-  password: PGPASSWORD
-  host: containers-us-west-74.railway.app
+  password: <%= ENV['PGPASSWORD'] %> 
+  host: <%= ENV['PGHOST'] %> 
   port: 5782
 
 development:
@@ -27,5 +27,5 @@ test:
 production:
   <<: *default
   database: db/production
-  username: PGUSER
+  username: <%= ENV['PGUSER'] %> 
   password: <%= ENV['PGPASSWORD'] %> 
