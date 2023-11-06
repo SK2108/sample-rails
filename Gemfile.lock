@@ -137,7 +137,7 @@ GEM
       ruby2_keywords
     erubi (1.12.0)
     execjs (2.9.1)
-    faker (3.2.1)
+    faker (3.2.2)
       i18n (>= 1.8.11, < 2)
     ffi (1.16.3)
     formatador (1.1.0)
@@ -369,7 +369,7 @@ DEPENDENCIES
   capybara (= 3.39.2)
   debug (= 1.8.0)
   dockerfile-rails (>= 1.0.0)
-  faker (= 3.2.1)
+  faker (= 3.2.2)
   guard (= 2.18.1)
   guard-minitest (= 2.4.6)
   image_processing (= 1.12.2)
