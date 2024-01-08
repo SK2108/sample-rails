@@ -17,7 +17,7 @@ gem "importmap-rails",            "2.0.1"
 gem "turbo-rails",                "1.5.0"
 gem "stimulus-rails",             "1.3.3"
 gem "jbuilder",                   "2.11.5"
-gem "puma",                       "6.4.1"
+gem "puma",                       "6.4.2"
 gem "bootsnap",                   "1.17.0", require: false
 gem 'rubocop', require: false
 gem 'psych', '5.1.2'
