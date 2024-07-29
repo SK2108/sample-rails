@@ -4,17 +4,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 gem "rails",                      "7.1.3.4"
-gem "image_processing",           "1.12.2"
+gem "image_processing",           "1.13.0"
 gem "active_storage_validations", "1.1.4"
 gem "bcrypt",                     "3.1.20"
-gem "faker",                      "3.4.1"
+gem "faker",                      "3.4.2"
 gem "will_paginate",              "4.0.1"
 gem "bootstrap-will_paginate",    "1.0.0"
 gem "bootstrap-sass",             "3.4.1"
 gem "sassc-rails",                "2.1.2"
 gem "sprockets-rails",            "3.5.1"
 gem "importmap-rails",            "2.0.1"
-gem "turbo-rails",                "2.0.5"
+gem "turbo-rails",                "2.0.6"
 gem "stimulus-rails",             "1.3.3"
 gem "jbuilder",                   "2.12.0"
 gem "puma",                       "6.4.2"
@@ -34,7 +34,7 @@ end
 
 group :test do
   gem "capybara",                 "3.40.0"
-  gem "selenium-webdriver",       "4.22.0"
+  gem "selenium-webdriver",       "4.23.0"
   gem "webdrivers",               "5.2.0"
   gem "rails-controller-testing", "1.0.5"
   gem "minitest",                 "5.24.1"
@@ -44,7 +44,7 @@ group :test do
 end
 
 group :production do
-  gem "pg",         "1.5.6"
+  gem "pg",         "1.5.7"
   gem "aws-sdk-s3", "1.156.0", require: false
 end
 
